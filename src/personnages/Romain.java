@@ -21,4 +21,14 @@ public class Romain {
 		return "Le Romain " + nom + " : ";
 	}
 	
+	public void recevoirCoup(int forceCoup) {
+		this.force = this.force - forceCoup;
+		if (this.force <= 0) {
+			System.out.println(prendreParole() + "J'abandonne !");
+		} else {
+			System.out.println(prendreParole() + "Aïe");
+		}
+		
+	}
+	
 }
